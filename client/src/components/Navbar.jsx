@@ -1,15 +1,14 @@
 import React from 'react'
-// Import the css
 import './Navbar.css'
+import Logo from '../assets/logo.png'
 
 function Navbar() {
   return (
     <header>
       <nav>
-        <h1> Hong Kong Premier League Fantasy Football </h1>
         <button>
           <span class="button_top">
-              <a href="home.html">Home</a>
+              <a href="index.html">Home</a>
           </span>
         </button>
         <button>
@@ -28,6 +27,7 @@ function Navbar() {
           </span>
         </button>
       </nav>
+      <img src={Logo} alt="logo" />
     </header>
   )
 }
