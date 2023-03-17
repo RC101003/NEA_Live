@@ -6,20 +6,19 @@ function Intro() {
     <div className="App">
       {/* create a home page for a football website  */}
       <header className="App-header">
-      <body>
+        <body>
+          <main>
+            <h2>Welcome to Fantasy Football</h2>
+            <p>Create your team, join a league and compete with other users!</p>
+          </main>
 
-    <main>
-      <h2>Welcome to Fantasy Football</h2>
-      <p>Create your team, join a league and compete with other users!</p>
-    </main>
-
-    <footer>
-      <p>&copy; 2022 Fantasy Football</p>
-    </footer>
-  </body>
+          <footer>
+            <p>&copy; 2022 Fantasy Football</p>
+          </footer>
+        </body>
       </header>
     </div>
-  )
+  );
 }
 
 export default Intro
