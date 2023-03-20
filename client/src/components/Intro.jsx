@@ -14,13 +14,13 @@ function Intro() {
       <p>Sign up or login to get started!</p>
     </main>
 
-    <footer>
-      <p>&copy; 2022 Fantasy Football</p>
-    </footer>
-  </body>
+          <footer>
+            <p>&copy; 2022 Fantasy Football</p>
+          </footer>
+        </body>
       </header>
     </div>
-  )
+  );
 }
 
 export default Intro
