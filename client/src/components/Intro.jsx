@@ -11,6 +11,7 @@ function Intro() {
     <main>
       <h2>Welcome to Fantasy Football</h2>
       <p>Create your team, join a league and compete with other users!</p>
+      <p>Sign up or login to get started!</p>
     </main>
 
     <footer>

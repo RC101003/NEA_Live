@@ -8,5 +8,13 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Navbar />
     <Intro />
+
+    <div className="container">
+      <div className="row">
+        <div className="col-md-6">
+          <h1>Home</h1>
+        </div>
+      </div>
+    </div>
   </React.StrictMode>
 )
