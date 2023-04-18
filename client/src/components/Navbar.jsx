@@ -8,12 +8,12 @@ function Navbar() {
       <nav>
         <button>
           <span class="button_top">
-              <a href="index.html">Home</a>
+              <a href="home.html">Home</a>
           </span>
         </button>
         <button>
           <span class="button_top">
-              <a href="squad-selection.html">Squad Selection</a>
+              <a href="squadSelection.html">Squad Selection</a>
           </span>
         </button>
         <button>
@@ -27,7 +27,7 @@ function Navbar() {
           </span>
         </button>
       </nav>
-      <img src={Logo} alt="logo" />
+      <img src={Logo} alt="logo" class="logo"/>
     </header>
   )
 }
