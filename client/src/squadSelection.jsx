@@ -39,6 +39,9 @@ const filteredPlayers = players && players.filter((player) => player[1].toLowerC
       <div className="squad-selection">
         <h1>Squad Selection</h1>
         <input type="text" placeholder="Search for a player" onChange ={handleSearchChange}/>
+        <p>Click on a player to add them to your squad</p>
+        <p>Click on a player in your squad to remove them</p>
+        <p>Click on a player in your squad to view their stats</p>
         <div className="player-list">
           {filteredPlayers && filteredPlayers.map((player) => (
               <div key={player[0]} className="player-card">

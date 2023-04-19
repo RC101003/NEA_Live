@@ -2,6 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "0.0.0",
+  "proxy" : "http://localhost:5000",
   "type": "module",
   "scripts": {
     "start": "react-scripts start",
@@ -11,6 +12,7 @@
   },
   "dependencies": {
     "@auth0/auth0-react": "^2.0.1",
+    "@craco/craco": "^7.1.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "mongoose": "^7.0.3",
