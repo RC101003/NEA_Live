@@ -12,7 +12,7 @@ function SquadSelection() {
     const fetchData = async () => {
     const sql = await initSqlJs();
     const xhr = new XMLHttpRequest();
-    xhr.open('GET', 'football.db', true);
+    xhr.open('GET', './footballer.db', true);
     xhr.responseType = 'arraybuffer';
     xhr.onload = () => {
       const uInt8Array = new Uint8Array(xhr.response);
@@ -27,10 +27,12 @@ function SquadSelection() {
   }, []);
 
 const handleSearchChange = (event) => {
-    setSearchQuery(event.target.value);
+    const query = event.target.value.toLowerCase();
+    setSearchQuery(query);
+    console.log()
 };
 
-const filteredPlayers = players && players.filter((player) => player[1].toLowerCase().includes(searchQuery.toLowerCase()));
+const filteredPlayers = players && players.filter((player) => player[1].toLowerCase().includes(searchQuery));
 
 
   return (
@@ -39,9 +41,6 @@ const filteredPlayers = players && players.filter((player) => player[1].toLowerC
       <div className="squad-selection">
         <h1>Squad Selection</h1>
         <input type="text" placeholder="Search for a player" onChange ={handleSearchChange}/>
-        <p>Click on a player to add them to your squad</p>
-        <p>Click on a player in your squad to remove them</p>
-        <p>Click on a player in your squad to view their stats</p>
         <div className="player-list">
           {filteredPlayers && filteredPlayers.map((player) => (
               <div key={player[0]} className="player-card">
