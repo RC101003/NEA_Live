@@ -9,8 +9,8 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <div className="login">
         <h1>Login</h1>
         <form>
-            <p>Username</p>
-            <input type="text" name="" placeholder="Enter Username" />
+            <p>Email</p>
+            <input type="email" name="" placeholder="Enter Email" />
             <p>Password</p>
             <input type="password" name="" placeholder="Enter Password" />
             <input type="submit" name="" value="Login" />
